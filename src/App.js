@@ -1,21 +1,15 @@
-import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [result, setResult] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <from>
+        <label htmFor="amount">Kwota:</label>
+        <inout type="number" id="amount" min="0.01" step="0.01" required />
+        <button type="submit">Przelicz</button>
+      </from>
     </div>
   );
 }
