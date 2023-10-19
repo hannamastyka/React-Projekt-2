@@ -1,9 +1,15 @@
-const Input = (props) => {
-  const { label, type, id, min, step, required } = props;
+const Input = () => {
   return (
     <>
-      <label htmFor={id}>{label}</label>
-      <input type={number} id={id} min={min} step={step} required={required} />
+      <label htmlFor={"amount"}>{"kwota"}</label>
+      <input
+        type={"amount"}
+        id={"amount"}
+        min={"0.01"}
+        step={"0.01"}
+        required={true}
+        name={"amount"}
+      />
     </>
   );
 };

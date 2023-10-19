@@ -1,9 +1,10 @@
-/*
-Komponent który zwraca nam : 
-<select>
-<option value="EUR">EUR</opcion>
-<option value="PLN">PLN</opcion>
-<option value="USD">USD</opcion>
-</select>
-
-*/
+const Select = () => {
+  return (
+    <select name="currency">
+      <option value="EUR">EUR</option>
+      <option value="CHF">CHF</option>
+      <option value="USD">USD</option>
+    </select>
+  );
+};
+export default Select;
