@@ -3,7 +3,7 @@ const Input = () => {
     <>
       <label htmlFor={"amount"}>{"kwota"}</label>
       <input
-        type={"amount"}
+        type={"number"}
         id={"amount"}
         min={"0.01"}
         step={"0.01"}
