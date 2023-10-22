@@ -1,7 +1,8 @@
 import Input from "../Input/Input";
 import Select from "../Select/Select";
+import Button from "../Button/Button";
 const Form = (props) => {
-  const { setResult } = props;
+  const { setResult, setError } = props;
 
   // useState dla currency
 
@@ -19,18 +20,20 @@ const Form = (props) => {
           const result = value * exchangeRate;
 
           setResult(result.toFixed(2));
+          setError("");
+        } else {
+          setError("Wystąpił błąd podczas pobierania danych z API.");
         }
       })
       .catch(() => {
-        setResult("Wystąpił błąd podczas pobierania danych z API.");
+        setError("Wystąpił błąd podczas pobierania danych z API.");
       });
   };
   return (
     <form onSubmit={calculateValue}>
       <Input />
       <Select />
-
-      <button type="submit">Przelicz</button>
+      <Button />
     </form>
   );
 };

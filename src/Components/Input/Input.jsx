@@ -1,3 +1,4 @@
+import styles from "./Input.module.css";
 const Input = () => {
   return (
     <>
@@ -9,6 +10,7 @@ const Input = () => {
         step={"0.01"}
         required={true}
         name={"amount"}
+        className={styles.amountInput}
       />
     </>
   );

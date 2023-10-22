@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Form from "./Form/Form";
+import Form from "./Components/Form/Form";
 
 function App() {
   const [result, setResult] = useState("0.00");
