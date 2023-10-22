@@ -11,6 +11,8 @@ const Input = () => {
         required={true}
         name={"amount"}
         className={styles.amountInput}
+        className={styles.textInput}
+        className={styles.containerInput}
       />
     </>
   );
