@@ -1,10 +1,8 @@
 import Input from "../Input/Input";
 import Select from "../Select/Select";
 import Button from "../Button/Button";
-const Form = (props) => {
+const Form = ({ setResult, setError }) => {
   const { setResult, setError } = props;
-
-  // useState dla currency
 
   const calculateValue = (event) => {
     event.preventDefault();
