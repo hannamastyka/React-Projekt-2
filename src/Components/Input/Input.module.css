@@ -1,13 +1,8 @@
 .amountInput {
   color: red;
-  padding: 10px;
   margin: 0 auto;
-  width: 100%;
+  width: 350px;
   text-align: center;
-  max-width: 800px;
-  
   padding: 20px;
   background-color: goldenrod;
-  justify-content: center;
 }
-

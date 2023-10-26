@@ -2,8 +2,6 @@ import Input from "../Input/Input";
 import Select from "../Select/Select";
 import Button from "../Button/Button";
 const Form = ({ setResult, setError }) => {
-  const { setResult, setError } = props;
-
   const calculateValue = (event) => {
     event.preventDefault();
     const value = event.target.amount.value;
